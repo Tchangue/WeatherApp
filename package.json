@@ -4,6 +4,7 @@
   "description": "This is an application to build a small application to provide information about current weathers in cities\r So let us build the world",
   "main": "index.js",
   "scripts": {
+    "run": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/Tchangue/WeatherApp#readme",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
   }
 }
