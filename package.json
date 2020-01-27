@@ -1,0 +1,23 @@
+{
+  "name": "WeatherApp",
+  "version": "1.0.0",
+  "description": "This is an application to build a small application to provide information about current weathers in cities\r So let us build the world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tchangue/WeatherApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tchangue/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/Tchangue/WeatherApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
