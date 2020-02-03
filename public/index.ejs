@@ -17,12 +17,12 @@
             </tr>
             <tr>
                 <td scope="row"><strong>Current temperature</strong></td>
-                <td><%= weather.currentTemp %>&#8451;</td>
+                <td class="badge badge-success"><%= weather.currentTemp %>&#8451;</td>
             </tr>
             <tr>
                 <td scope="row"><strong>Min/Max, felt temperature</strong></td>
-                <td><%= weather.minTemp %>&#8451; / <%= weather.maxTemp %>&#8451;, Gefühlt <%= weather.feltTemp %>
-                    &#8451;
+                <td>
+                    <small class="badge badge-secondary"><%= weather.minTemp %>&#8451; </small> / <small class="badge badge-warning"><%= weather.maxTemp %>&#8451;</small>, feels like <%= weather.feltTemp %>&#8451;
                 </td>
             </tr>
             <tr>
@@ -45,7 +45,7 @@
             </tr>
             <tr>
                 <% if(weather.forecast && weather.forecast.length > 0){ %>
-                    <td scope="row"><strong>Forecast for the next 5 days<br>(&#9888; Only valid for middays)</strong>
+                    <td scope="row"><strong>Forecast for the next 5 days<br>(&#9888; only valid for middays)</strong>
                     </td>
                     <td>
                         <!--<tr>-->
@@ -59,7 +59,7 @@
                             </tr>
                             <tr>
                                 <% for(let i = 0; i < weather.forecast.length; i++) { %>
-                                    <td><%= weather.forecast[i].minTemp %>&#8451;/<%= weather.forecast[i].maxTemp %>
+                                    <td><small class="badge badge-secondary"><%= weather.forecast[i].minTemp %>&#8451;</small> /<small class="badge badge-warning"><%= weather.forecast[i].maxTemp %>&#8451;</small>
                                         &#8451;
                                         %>
                                         <br><img src="<%= `${weather.forecast[i].icon}` %>" alt="Icon"
