@@ -14,8 +14,7 @@ const macros = require('./macros');
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public/img')));
+app.use(express.static(path.join(__dirname, 'public/')));
 app.set('views', path.resolve(__dirname, 'public/'));
 app.set('view engine', 'ejs');
 
